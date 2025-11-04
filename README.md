@@ -1,7 +1,7 @@
 # 4d-example-mistral-ai
 Chat UI
 
-# API Key
+## API Key
 
 Place `Mistral.token` next to `/PACKAGE/` with your API key in plain text.
 
