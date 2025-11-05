@@ -7,6 +7,7 @@ property continueObjectName : Text
 property promptObjectName : Text
 property messages : Collection
 property _onResponse : 4D:C1709.Function
+property stream : Boolean
 
 Class constructor($baseURL : Text; $keyFile : 4D:C1709.File; $model : Text; $resultObjectName : Text; $continueObjectName : Text; $promptObjectName : Text)
 	
@@ -16,6 +17,7 @@ Class constructor($baseURL : Text; $keyFile : 4D:C1709.File; $model : Text; $res
 	This:C1470.resultObjectName:=$resultObjectName
 	This:C1470.continueObjectName:=$continueObjectName
 	This:C1470.promptObjectName:=$promptObjectName
+	This:C1470.stream:=True:C214  //over-ride if necessary
 	
 /*
 	
@@ -68,7 +70,7 @@ Function continueConversation($messages : Collection) : cs:C1710.AIKit.OpenAICha
 	$ChatCompletionsParameters:=cs:C1710.AIKit.OpenAIChatCompletionsParameters.new()
 	$ChatCompletionsParameters.model:=This:C1470.model
 	$ChatCompletionsParameters.formula:=This:C1470.onData
-	$ChatCompletionsParameters.stream:=True:C214
+	$ChatCompletionsParameters.stream:=This:C1470.stream
 	
 	var $ChatCompletionsResult : cs:C1710.AIKit.OpenAIChatCompletionsResult
 	$ChatCompletionsResult:=This:C1470.OpenAI.chat.completions.create(This:C1470.messages; $ChatCompletionsParameters)
@@ -124,6 +126,8 @@ we have attached the real This to OpenAI.Mistral in the constructor
 			If ($chatCompletionsResult.choice.message=Null:C1517)  //streaming
 				$chatCompletionsResult:=JSON Parse:C1218(JSON Stringify:C1217($chatCompletionsResult))
 				$chatCompletionsResult.choice.message:={role: "assistant"; content: $that.ChatResult}
+			Else   //not streaming
+				$that.ChatResult:=$chatCompletionsResult.choice.message.content
 			End if 
 			$that.messages.push($chatCompletionsResult.choice.message)
 			$that.onResponse($chatCompletionsResult)

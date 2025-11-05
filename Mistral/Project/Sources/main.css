@@ -14,3 +14,7 @@ picture.openai {
 picture.claude {
 	picture: url("Images/claude.svg");
 }
+
+picture.gemini {
+	picture: url("Images/gemini.svg");
+}
