@@ -11,7 +11,8 @@ Chat UI
 * Place `OpenAI.token` next to `/PACKAGE/` with your API key in plain text.
 * Place `Claude.token` next to `/PACKAGE/` with your API key in plain text.
 * Place `Gemini.token` next to `/PACKAGE/` with your API key in plain text.
-
+* Place `groq.token` next to `/PACKAGE/` with your API key in plain text.
+* 
 <img width="940" height="380" alt="" src="https://github.com/user-attachments/assets/83ffb528-dbad-41be-b125-82aaaa0ead69" />
 
 <img width="940" height="380" alt="" src="https://github.com/user-attachments/assets/160f1146-5746-4e75-bf14-cfc8d37140ba" />
@@ -19,3 +20,5 @@ Chat UI
 <img width="940" height="380" alt="" src="https://github.com/user-attachments/assets/6ce531ab-e7b2-408e-9102-7825ae8bd23d" />
 
 <img width="940" height="380" alt="" src="https://github.com/user-attachments/assets/3c66ec98-df6a-4d68-9838-42f28b76798f" />
+
+<img width="940" height="380" alt="" src="https://github.com/user-attachments/assets/13f10aa9-c4a5-44fb-b5b0-ea34e9c6da4b" />
