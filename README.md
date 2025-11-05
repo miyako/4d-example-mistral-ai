@@ -13,6 +13,8 @@ Chat UI
 * Place `Gemini.token` next to `/PACKAGE/` with your API key in plain text.
 * Place `groq.token` next to `/PACKAGE/` with your API key in plain text.
 * Place `OpenRouter.token` next to `/PACKAGE/` with your API key in plain text.
+* Place `Cohere.token` next to `/PACKAGE/` with your API key in plain text.
+* Place `NVIDIA.token` next to `/PACKAGE/` with your API key in plain text.
 
 <img width="940" height="380" alt="" src="https://github.com/user-attachments/assets/83ffb528-dbad-41be-b125-82aaaa0ead69" />
 
@@ -25,3 +27,7 @@ Chat UI
 <img width="940" height="380" alt="" src="https://github.com/user-attachments/assets/b4fd61e8-0240-49c4-88b4-3d7d103efcdc" />
 
 <img width="940" height="380" alt="" src="https://github.com/user-attachments/assets/b881f896-2020-47eb-95e9-dab69ecdb184" />
+
+<img width="940" height="380" alt="" src="https://github.com/user-attachments/assets/9a470ee3-1a2e-402c-ad16-5d20d06b7703" />
+
+<img width="940" height="380" alt="" src="https://github.com/user-attachments/assets/645db99c-fe56-48bd-8c2d-d16235d38e88" />
