@@ -10,3 +10,7 @@ picture.mistral {
 picture.openai {
 	picture: url("Images/openai.svg");
 }
+
+picture.claude {
+	picture: url("Images/claude.svg");
+}
