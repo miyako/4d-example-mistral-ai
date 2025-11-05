@@ -10,6 +10,7 @@ Else
 	var $OpenAI : cs:C1710.OpenAI
 	$OpenAI:=cs:C1710.OpenAI.new("gpt-4.1"; "Chat Result (OpenAI)"; "Continue Conversation"; "User Prompt")
 	
+	var $window : Integer
 	$window:=Open form window:C675("TEST_OpenAI")
 	DIALOG:C40("TEST_OpenAI"; $OpenAI; *)
 	
