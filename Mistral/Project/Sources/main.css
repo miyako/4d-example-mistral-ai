@@ -38,3 +38,11 @@ picture.deepinfra {
 picture.nvidia {
 	picture: url("Images/nvidia.svg");
 }
+
+picture.perplexity {
+	picture: url("Images/perplexity.svg");
+}
+
+picture.huggingface {
+	picture: url("Images/huggingface.svg");
+}
