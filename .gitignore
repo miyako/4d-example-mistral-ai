@@ -4,3 +4,6 @@ Claude.token
 Gemini.token
 groq.token
 OpenRouter.token
+DeepInfra.token
+Cohere.token
+NVIDIA.token

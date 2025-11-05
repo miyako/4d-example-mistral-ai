@@ -30,3 +30,11 @@ picture.openrouter {
 picture.cohere {
 	picture: url("Images/cohere.svg");
 }
+
+picture.deepinfra {
+	picture: url("Images/deepinfra.svg");
+}
+
+picture.nvidia {
+	picture: url("Images/nvidia.svg");
+}
