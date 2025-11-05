@@ -22,3 +22,7 @@ picture.gemini {
 picture.groq {
 	picture: url("Images/groq.svg");
 }
+
+picture.openrouter {
+	picture: url("Images/openrouter.svg");
+}

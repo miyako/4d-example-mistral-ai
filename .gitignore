@@ -3,3 +3,4 @@ OpenAI.token
 Claude.token
 Gemini.token
 groq.token
+OpenRouter.token
