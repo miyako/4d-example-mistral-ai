@@ -1,0 +1,8 @@
+input.prompt {
+	stroke: automatic;
+	font-size: 20;
+}
+
+picture.mistral {
+	picture: url("Images/mistral.svg");
+}
