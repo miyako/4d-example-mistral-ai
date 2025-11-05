@@ -99,22 +99,25 @@ Function onResponse($chatCompletionsResult : cs:C1710.AIKit.OpenAIChatCompletion
 	
 Function onData($chatCompletionsResult : cs:C1710.AIKit.OpenAIChatCompletionsResult)
 	
+/*
+due to callback architecture
+"This" in this context is cs.AIKit.OpenAI not this class (cs.Mistral)
+we have attached the real This to OpenAI.Mistral in the constructor
+*/
+	
 	//%W-550.26
 	var $that : cs:C1710.Mistral
 	$that:=This:C1470.Mistral
 	//%W+550.26
-	
-/*
-"This" in this context is cs.AIKit.OpenAI
-*/
 	
 	If ($chatCompletionsResult.success)
 		If ($chatCompletionsResult.terminated)
 			//complete result
 			If ($chatCompletionsResult.choice.message=Null:C1517)  //streaming
 				$chatCompletionsResult:=JSON Parse:C1218(JSON Stringify:C1217($chatCompletionsResult))
-				$chatCompletionsResult.choice.message:={content: $that.ChatResult}
+				$chatCompletionsResult.choice.message:={role: "assistant"; content: $that.ChatResult}
 			End if 
+			$that.messages.push($chatCompletionsResult.choice.message)
 			$that.onResponse($chatCompletionsResult)
 		Else 
 			//partial result
