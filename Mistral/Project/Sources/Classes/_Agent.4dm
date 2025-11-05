@@ -78,6 +78,14 @@ your This in the callback formula will actually be "This"
 	$ChatCompletionsParameters.stream:=This:C1470.stream
 	$ChatCompletionsParameters.formula:=This:C1470.onEventStream
 	
+	var $class : 4D:C1709.Class
+	$class:=OB Class:C1730(This:C1470)
+	
+	Case of 
+		: ($class.name="Cohere")
+			OB REMOVE:C1226($ChatCompletionsParameters; "n")
+	End case 
+	
 	var $ChatCompletionsResult : cs:C1710.AIKit.OpenAIChatCompletionsResult
 	$ChatCompletionsResult:=This:C1470.OpenAI.chat.completions.create(This:C1470.messages; $ChatCompletionsParameters)
 	

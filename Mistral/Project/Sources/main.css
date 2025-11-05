@@ -26,3 +26,7 @@ picture.groq {
 picture.openrouter {
 	picture: url("Images/openrouter.svg");
 }
+
+picture.cohere {
+	picture: url("Images/cohere.svg");
+}
