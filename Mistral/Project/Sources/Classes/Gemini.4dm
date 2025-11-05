@@ -8,4 +8,4 @@ Class constructor($model : Text; $resultObjectName : Text; $continueObjectName :
 	Super:C1705("https://generativelanguage.googleapis.com/v1beta/openai"; $keyFile; \
 		$model; $resultObjectName; $continueObjectName; $promptObjectName)
 	
-	This:C1470.stream:=False:C215
+	This:C1470.stream:=False:C215  //gemini stream emits 1 byte at a time; AI Kit can't handle that

@@ -84,24 +84,11 @@
 					"height": 48,
 					"pictureFormat": "scaled",
 					"class": "logo gemini"
-				},
-				"Stream": {
-					"type": "checkbox",
-					"text": "stream",
-					"top": 122,
-					"left": 8,
-					"width": 72,
-					"height": 30,
-					"events": [
-						"onClick"
-					],
-					"dataSourceTypeHint": "boolean",
-					"dataSource": "Form:C1466.stream"
 				}
 			}
 		}
 	],
-	"geometryStamp": 193,
+	"geometryStamp": 194,
 	"menuBar": "Barre #1",
 	"method": "method.4dm",
 	"editor": {
