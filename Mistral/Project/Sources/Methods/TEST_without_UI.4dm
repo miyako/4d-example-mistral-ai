@@ -17,7 +17,6 @@ Else
 /*
 async call
 result accumulate in .ChatResult
-see .onData() callback function
 */
 	
 	$Mistral.startConversation($messages; Formula:C1597(ALERT:C41(This:C1470.ChatResult)))
