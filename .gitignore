@@ -2,3 +2,4 @@ Mistral.token
 OpenAI.token
 Claude.token
 Gemini.token
+groq.token

@@ -18,3 +18,7 @@ picture.claude {
 picture.gemini {
 	picture: url("Images/gemini.svg");
 }
+
+picture.groq {
+	picture: url("Images/groq.svg");
+}
