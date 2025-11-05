@@ -21,4 +21,4 @@ Chat UI
 
 <img width="940" height="380" alt="" src="https://github.com/user-attachments/assets/3c66ec98-df6a-4d68-9838-42f28b76798f" />
 
-<img width="940" height="380" alt="" src="https://github.com/user-attachments/assets/13f10aa9-c4a5-44fb-b5b0-ea34e9c6da4b" />
+<img width="940" height="380" alt="" src="https://github.com/user-attachments/assets/b4fd61e8-0240-49c4-88b4-3d7d103efcdc" />
