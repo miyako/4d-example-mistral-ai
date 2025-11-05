@@ -51,7 +51,7 @@
 					"class": "prompt",
 					"right": 760
 				},
-				"Chat Result (Mistral)": {
+				"Chat Result (OpenAI)": {
 					"type": "input",
 					"left": 88,
 					"top": 75,
@@ -83,12 +83,12 @@
 					"width": 48,
 					"height": 48,
 					"pictureFormat": "scaled",
-					"class": "logo mistral"
+					"class": "logo openai"
 				}
 			}
 		}
 	],
-	"geometryStamp": 175,
+	"geometryStamp": 178,
 	"menuBar": "Barre #1",
 	"method": "method.4dm",
 	"editor": {

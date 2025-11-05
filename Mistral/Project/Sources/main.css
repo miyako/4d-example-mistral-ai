@@ -6,3 +6,7 @@ input.prompt {
 picture.mistral {
 	picture: url("Images/mistral.svg");
 }
+
+picture.openai {
+	picture: url("Images/openai.svg");
+}
