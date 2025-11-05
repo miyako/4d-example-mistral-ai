@@ -7,3 +7,5 @@ OpenRouter.token
 DeepInfra.token
 Cohere.token
 NVIDIA.token
+HuggingFace.token
+Perplexity.token
