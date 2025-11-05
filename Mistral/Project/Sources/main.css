@@ -46,3 +46,7 @@ picture.perplexity {
 picture.huggingface {
 	picture: url("Images/huggingface.svg");
 }
+
+picture.fireworks {
+	picture: url("Images/fireworks.svg");
+}
