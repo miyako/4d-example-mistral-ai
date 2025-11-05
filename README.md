@@ -7,6 +7,9 @@ Chat UI
 
 ## API Key
 
-Place `Mistral.token` next to `/PACKAGE/` with your API key in plain text.
+* Place `Mistral.token` next to `/PACKAGE/` with your API key in plain text.
+* Place `OpenAI.token` next to `/PACKAGE/` with your API key in plain text.
 
-<img width="676" height="425" alt="" src="https://github.com/user-attachments/assets/e20ae31c-86b8-44c0-96b4-de8c48700712" />
+<img width="940" height="380" alt="" src="https://github.com/user-attachments/assets/83ffb528-dbad-41be-b125-82aaaa0ead69" />
+
+<img width="940" height="380" alt="" src="https://github.com/user-attachments/assets/160f1146-5746-4e75-bf14-cfc8d37140ba" />
