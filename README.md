@@ -11,7 +11,7 @@ Chat UI
 * Place `OpenAI.token` next to `/PACKAGE/` with your API key in plain text.
 * Place `Claude.token` next to `/PACKAGE/` with your API key in plain text.
 * Place `Gemini.token` next to `/PACKAGE/` with your API key in plain text.
-* Place `groq.token` next to `/PACKAGE/` with your API key in plain text.
+* Place `Groq.token` next to `/PACKAGE/` with your API key in plain text.
 * Place `OpenRouter.token` next to `/PACKAGE/` with your API key in plain text.
 * Place `Cohere.token` next to `/PACKAGE/` with your API key in plain text.
 * Place `NVIDIA.token` next to `/PACKAGE/` with your API key in plain text.
