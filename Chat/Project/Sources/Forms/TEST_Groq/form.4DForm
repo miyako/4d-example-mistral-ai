@@ -51,7 +51,7 @@
 					"class": "prompt",
 					"right": 760
 				},
-				"Chat Result (groq)": {
+				"Chat Result (Groq)": {
 					"type": "input",
 					"left": 88,
 					"top": 115,
@@ -114,7 +114,7 @@
 			}
 		}
 	],
-	"geometryStamp": 191,
+	"geometryStamp": 192,
 	"menuBar": "Barre #1",
 	"method": "method.4dm",
 	"editor": {
