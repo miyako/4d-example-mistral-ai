@@ -71,9 +71,17 @@ Function onModels($ModelListResult : cs:C1710.AIKit.OpenAIModelListResult)
 				
 				Case of 
 					: (Value type:C1509($model.capabilities)=Is object:K8:27)\
-						 && (Value type:C1509($model.capabilities.completion_chat)=Is boolean:K8:9)\
-						 && ($model.capabilities.completion_chat)  //Mistral
-						$values.push($model.id)
+						 && (Value type:C1509($model.capabilities.completion_chat)=Is boolean:K8:9)
+						If ($model.capabilities.completion_chat)  //Mistral
+							$values.push($model.id)
+						End if 
+						
+					: (Value type:C1509($model.pricing)=Is object:K8:27)\
+						 && (Value type:C1509($model.pricing.completion)=Is text:K8:3)
+						If ($model.pricing.completion="0")  //OpenRouter (:free)
+							$values.push($model.id)
+						End if 
+						
 					Else   //default
 						$values.push($model.id)
 				End case 
