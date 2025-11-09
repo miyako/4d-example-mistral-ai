@@ -76,6 +76,11 @@ Function onModels($ModelListResult : cs:C1710.AIKit.OpenAIModelListResult)
 							$values.push($model.id)
 						End if 
 						
+					: (Value type:C1509($model.supports_chat)=Is boolean:K8:9)
+						If ($model.supports_chat)  //Fireworks
+							$values.push($model.id)
+						End if 
+						
 					: (Value type:C1509($model.pricing)=Is object:K8:27)\
 						 && (Value type:C1509($model.pricing.completion)=Is text:K8:3)
 						If ($model.pricing.completion="0")  //OpenRouter (:free)
