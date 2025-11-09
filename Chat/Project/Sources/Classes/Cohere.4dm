@@ -7,3 +7,9 @@ Class constructor($model : Text; $resultObjectName : Text; $continueObjectName :
 	
 	Super:C1705("https://api.cohere.ai/compatibility/v1"; $keyFile; \
 		$model; $resultObjectName; $continueObjectName; $promptObjectName)
+	
+Function getModels()
+/*
+models endpoint unavailable
+*/
+	This:C1470.models:={values: [This:C1470.model]; index: 0}
