@@ -50,3 +50,7 @@ picture.huggingface {
 picture.fireworks {
 	picture: url("Images/fireworks.svg");
 }
+
+picture.xai {
+	picture: url("Images/xai.svg");
+}
