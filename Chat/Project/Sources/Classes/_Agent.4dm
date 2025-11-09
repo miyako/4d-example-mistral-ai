@@ -68,7 +68,15 @@ Function onModels($ModelListResult : cs:C1710.AIKit.OpenAIModelListResult)
 			var $values : Collection
 			$values:=[]
 			For each ($model; $ModelListResult.models)
-				$values.push($model.id)
+				
+				Case of 
+					: (Value type:C1509($model.capabilities)=Is object:K8:27)\
+						 && (Value type:C1509($model.capabilities.completion_chat)=Is boolean:K8:9)\
+						 && ($model.capabilities.completion_chat)  //Mistral
+						$values.push($model.id)
+					Else   //default
+						$values.push($model.id)
+				End case 
 			End for each 
 			This:C1470.models.values:=$values
 			If ($values.length=0)
