@@ -29,7 +29,7 @@
 				"Start Conversation": {
 					"type": "button",
 					"text": "Start Conversation",
-					"top": 18,
+					"top": 58,
 					"left": 10,
 					"width": 150,
 					"height": 37,
@@ -43,7 +43,7 @@
 				"User Prompt": {
 					"type": "input",
 					"left": 170,
-					"top": 24,
+					"top": 64,
 					"width": 590,
 					"height": 25,
 					"dataSource": "Form:C1466.userPrompt",
@@ -54,18 +54,20 @@
 				"Chat Result (DeepInfra)": {
 					"type": "input",
 					"left": 88,
-					"top": 75,
+					"top": 115,
 					"width": 832,
 					"height": 257,
 					"dataSource": "",
 					"enterable": false,
 					"fill": "transparent",
-					"showSelection": true
+					"showSelection": true,
+					"sizingX": "grow",
+					"sizingY": "grow"
 				},
 				"Continue Conversation": {
 					"type": "button",
 					"text": "Continue Conversation",
-					"top": 18,
+					"top": 58,
 					"left": 770,
 					"width": 150,
 					"height": 37,
@@ -78,17 +80,41 @@
 				},
 				"Logo": {
 					"type": "picture",
-					"top": 69,
+					"top": 109,
 					"left": 20,
 					"width": 48,
 					"height": 48,
 					"pictureFormat": "scaled",
 					"class": "logo deepinfra"
+				},
+				"Models": {
+					"type": "dropdown",
+					"left": 70,
+					"top": 20,
+					"width": 344,
+					"height": 26,
+					"events": [
+						"onDataChange"
+					],
+					"dataSourceTypeHint": "object",
+					"dataSource": "Form:C1466.models",
+					"focusable": false,
+					"method": "ObjectMethods/Models.4dm"
+				},
+				"Text": {
+					"type": "text",
+					"text": "Model:",
+					"top": 25,
+					"left": 10,
+					"width": 50,
+					"height": 16,
+					"textAlign": "right",
+					"fontWeight": "bold"
 				}
 			}
 		}
 	],
-	"geometryStamp": 186,
+	"geometryStamp": 191,
 	"menuBar": "Barre #1",
 	"method": "method.4dm",
 	"editor": {

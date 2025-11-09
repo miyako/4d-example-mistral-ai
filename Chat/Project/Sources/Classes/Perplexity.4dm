@@ -9,3 +9,9 @@ Class constructor($model : Text; $resultObjectName : Text; $continueObjectName :
 		$model; $resultObjectName; $continueObjectName; $promptObjectName)
 	
 	This:C1470.stream:=False:C215
+	
+Function getModels()
+/*
+models endpoint unavailable
+*/
+	This:C1470.models:={values: [This:C1470.model]; index: 0}

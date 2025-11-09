@@ -7,3 +7,7 @@ Class constructor($model : Text; $resultObjectName : Text; $continueObjectName :
 	
 	Super:C1705("https://api.anthropic.com/v1"; $keyFile; \
 		$model; $resultObjectName; $continueObjectName; $promptObjectName)
+	
+	This:C1470.OpenAI.customHeaders:={}
+	This:C1470.OpenAI.customHeaders["x-api-key"]:=This:C1470.OpenAI.apiKey
+	This:C1470.OpenAI.customHeaders["anthropic-version"]:="2023-06-01"
