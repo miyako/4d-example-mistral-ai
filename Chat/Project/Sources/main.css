@@ -58,3 +58,7 @@ picture.xai {
 picture.deepseek {
 	picture: url("Images/deepseek.svg");
 }
+
+picture.anyscale {
+	picture: url("Images/anyscale.svg");
+}
