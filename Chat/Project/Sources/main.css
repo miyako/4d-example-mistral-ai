@@ -54,3 +54,7 @@ picture.fireworks {
 picture.xai {
 	picture: url("Images/xai.svg");
 }
+
+picture.deepseek {
+	picture: url("Images/deepseek.svg");
+}
