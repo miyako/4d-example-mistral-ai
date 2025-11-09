@@ -62,3 +62,7 @@ picture.deepseek {
 picture.anyscale {
 	picture: url("Images/anyscale.svg");
 }
+
+picture.cometapi {
+	picture: url("Images/cometapi.svg");
+}
