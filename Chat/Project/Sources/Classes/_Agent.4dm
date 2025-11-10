@@ -87,6 +87,10 @@ Function onModels($ModelListResult : cs:C1710.AIKit.OpenAIModelListResult)
 							$values.push($model.id)
 						End if 
 						
+					: (OB Class:C1730(This:C1470).name="LOCAL")
+						
+						$values.push(Path to object:C1547($model.id; Path is POSIX:K24:26).name)
+						
 					Else   //default
 						$values.push($model.id)
 				End case 
