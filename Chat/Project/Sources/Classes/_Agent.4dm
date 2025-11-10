@@ -56,6 +56,10 @@ it is only to be executed when This=Form and Form#Null
 			$index:=This:C1470.models.values.indexOf(This:C1470.model)
 			If ($index#-1)
 				This:C1470.models.index:=$index
+			Else 
+				If (This:C1470.models.values.length#0)
+					This:C1470.model:=This:C1470.models.values[0]
+				End if 
 			End if 
 		End if 
 		//%T-
@@ -89,7 +93,7 @@ Function onModels($ModelListResult : cs:C1710.AIKit.OpenAIModelListResult)
 						
 					: (OB Class:C1730(This:C1470).name="LOCAL")
 						
-						$values.push(Path to object:C1547($model.id; Path is POSIX:K24:26).name)
+						$values.push($model.id)
 						
 					Else   //default
 						$values.push($model.id)

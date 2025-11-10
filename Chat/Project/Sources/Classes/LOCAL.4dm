@@ -7,5 +7,3 @@ Class constructor($model : Text; $resultObjectName : Text; $continueObjectName :
 	
 	Super:C1705("http://127.0.0.1:8080/v1"; $keyFile; \
 		$model; $resultObjectName; $continueObjectName; $promptObjectName)
-	
-	This:C1470.stream:=False:C215
