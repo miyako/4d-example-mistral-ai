@@ -21,6 +21,7 @@ Chat UI
 * Place `Fireworks.token` next to `/PACKAGE/` with your API key in plain text.
 * Place `xAI.token` next to `/PACKAGE/` with your API key in plain text.
 * Place `LOCAL.token` next to `/PACKAGE/` with your API key in plain text.
+* Place `Azure.token` next to `/PACKAGE/` with your API key in plain text.
 
 <img width="940" height="380" alt="" src="https://github.com/user-attachments/assets/83ffb528-dbad-41be-b125-82aaaa0ead69" />
 <img width="940" height="380" alt="" src="https://github.com/user-attachments/assets/160f1146-5746-4e75-bf14-cfc8d37140ba" />
