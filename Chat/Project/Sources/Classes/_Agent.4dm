@@ -80,6 +80,13 @@ Function onModels($ModelListResult : cs:C1710.AIKit.OpenAIModelListResult)
 							$values.push($model.id)
 						End if 
 						
+					: (Value type:C1509($model.capabilities)=Is object:K8:27)\
+						 && (Value type:C1509($model.capabilities.chat_completion)=Is boolean:K8:9)
+						If ($model.capabilities.chat_completion)\
+							 && (["generally-available"; "preview"].includes($model.lifecycle_status))  //Azure
+							$values.push($model.id)
+						End if 
+						
 					: (Value type:C1509($model.supports_chat)=Is boolean:K8:9)
 						If ($model.supports_chat)  //Fireworks
 							$values.push($model.id)
@@ -228,17 +235,25 @@ Function onEventStream($chatCompletionsResult : cs:C1710.AIKit.OpenAIChatComplet
 	If ($chatCompletionsResult.success)
 		If ($chatCompletionsResult.terminated)
 			//complete result
-			If ($chatCompletionsResult.choice.message=Null:C1517)  //streaming
-				$chatCompletionsResult:=JSON Parse:C1218(JSON Stringify:C1217($chatCompletionsResult))
-				$chatCompletionsResult.choice.message:={role: "assistant"; content: This:C1470.ChatResult}
-			Else   //not streaming
-				This:C1470.ChatResult+=$chatCompletionsResult.choice.message.content
+			If ($chatCompletionsResult.choice#Null:C1517)
+				If ($chatCompletionsResult.choice.message=Null:C1517)  //streaming
+					$chatCompletionsResult:=JSON Parse:C1218(JSON Stringify:C1217($chatCompletionsResult))
+					$chatCompletionsResult.choice.message:={role: "assistant"; content: This:C1470.ChatResult}
+				Else   //not streaming
+					This:C1470.ChatResult+=$chatCompletionsResult.choice.message.content
+				End if 
+				This:C1470.messages.push($chatCompletionsResult.choice.message)
+			Else 
+				
 			End if 
-			This:C1470.messages.push($chatCompletionsResult.choice.message)
 			This:C1470.onCompletion($chatCompletionsResult)
 		Else 
 			//partial result
-			This:C1470.ChatResult+=$chatCompletionsResult.choice.delta.text
+			If ($chatCompletionsResult.choice#Null:C1517)
+				This:C1470.ChatResult+=$chatCompletionsResult.choice.delta.text
+			Else 
+				
+			End if 
 		End if 
 	Else 
 		If ($chatCompletionsResult.terminated)

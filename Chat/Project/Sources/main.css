@@ -66,3 +66,7 @@ picture.anyscale {
 picture.cometapi {
 	picture: url("Images/cometapi.svg");
 }
+
+picture.azure {
+	picture: url("Images/azure.svg");
+}
