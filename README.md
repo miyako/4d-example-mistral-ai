@@ -34,5 +34,6 @@ Chat UI
 <img width="940" height="380" alt="" src="https://github.com/user-attachments/assets/8b6af0ca-c59d-4d99-a7f8-f05188a98b2d" />
 <img width="940" height="380" alt="" src="https://github.com/user-attachments/assets/7137d725-c859-4e7c-a87d-0dc20be6d505" />
 <img width="940" height="380" alt="" src="https://github.com/user-attachments/assets/6bd0fd9f-128c-4b08-a1d8-d326a5aa7105" />
-<img width="940" height="420" alt="" src="https://github.com/user-attachments/assets/2ef9cc02-a042-4425-b030-efad1b4b634e" />
 
+<img width="940" height="420" alt="" src="https://github.com/user-attachments/assets/2ef9cc02-a042-4425-b030-efad1b4b634e" />
+<img width="940" height="420" alt="" src="https://github.com/user-attachments/assets/c949618b-7d47-4cda-a840-9c6ea423db8b" />
