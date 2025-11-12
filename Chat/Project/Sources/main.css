@@ -70,3 +70,7 @@ picture.cometapi {
 picture.azure {
 	picture: url("Images/azure.svg");
 }
+
+picture.moonshot {
+	picture: url("Images/moonshot.svg");
+}
