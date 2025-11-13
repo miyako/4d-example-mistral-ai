@@ -8,7 +8,7 @@ If (Count parameters:C259=0)
 Else 
 	
 	var $Moonshot : cs:C1710.Moonshot
-	$Moonshot:=cs:C1710.Moonshot.new(""; "Chat Result (Moonshot)"; "Continue Conversation"; "User Prompt")
+	$Moonshot:=cs:C1710.Moonshot.new("moonshot/v1-32k"; "Chat Result (Moonshot)"; "Continue Conversation"; "User Prompt")
 	
 	var $window : Integer
 	$window:=Open form window:C675("TEST_Moonshot")
