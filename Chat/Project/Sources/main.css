@@ -23,6 +23,10 @@ picture.groq {
 	picture: url("Images/groq.svg");
 }
 
+picture.alibaba {
+	picture: url("Images/alibaba.svg");
+}
+
 picture.openrouter {
 	picture: url("Images/openrouter.svg");
 }
