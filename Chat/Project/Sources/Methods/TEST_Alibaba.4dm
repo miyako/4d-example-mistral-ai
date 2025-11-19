@@ -8,7 +8,7 @@ If (Count parameters:C259=0)
 Else 
 	
 	var $Alibaba : cs:C1710.Alibaba
-	$Alibaba:=cs:C1710.Alibaba.new("qwen-flash"; "Chat Result (Alibaba)"; "Continue Conversation"; "User Prompt")
+	$Alibaba:=cs:C1710.Alibaba.new("qwen-max"; "Chat Result (Alibaba)"; "Continue Conversation"; "User Prompt")
 	
 	var $window : Integer
 	$window:=Open form window:C675("TEST_Alibaba")
